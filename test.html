@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nudibranch web terminal</title>
+    <meta name="description" content="nudibranch web terminal">
+    <meta name="author" content="Meadhbh S. Hamrick">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script type="text/javascript" src="js/TerminalFB.js"></script>
+    <script type="text/javascript" src="js/ANSITerminal.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body onload="_onload()">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+	  <a class="brand">nudibranch web terminal</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <canvas id="C80" width="640" height="336"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <canvas id="APP" width="640" height="336"></canvas>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
