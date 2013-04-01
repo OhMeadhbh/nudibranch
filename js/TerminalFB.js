@@ -1,6 +1,3 @@
-// Copyright (c) 2013 Meadhbh S. Hamrick, All Rights Reserved
-// License info at https://raw.github.com/OhMeadhbh/nudibranch/master/LICENSE
-
 ( function () {
   // Convenience Functions
   function _oneOrOther( one, other ) {
@@ -166,10 +163,11 @@
       }
       this.context.fillRect( x * this.char_extent[0], y * this.char_extent[1], width * this.char_extent[0], this.char_extent[1] );
       if( (attr & TerminalFB._ATTR_UNDERLINE ) != 0 ) {
+        console.log( x + "," + y );
         if( cursor ) {
-          this.context.fillStyle = ((attr&TerminalFB._ATTR_INVERSE)==0?this.color:this.bg);
-        } else {
           this.context.fillStyle = ((attr&TerminalFB._ATTR_INVERSE)==0?this.bg:this.color);
+        } else {
+          this.context.fillStyle = ((attr&TerminalFB._ATTR_INVERSE)==0?this.color:this.bg);
         }
         this.context.fillRect( x * this.char_extent[0], ( ( y + 1 ) * this.char_extent[1] ) - 2, width * this.char_extent[0], 1 );
       }
